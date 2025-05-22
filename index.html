@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Für dich – Happy 40 ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Happy 40, mein Herz ❤️🎉</h1>
+    <p>Diese Seite ist nur für dich. 
+        Ein kleines Abenteuer. Ein Rückblick. Ein Vorschau. 
+        Und ganz viel Liebe.</p>
+  </section>
+
+  
+
+  <section class="gift">
+    <h2>Hier beginnt dein Geburtstagsabenteuer... 💕</h2>
+    <h2>🎁 Save the Date!</h2>
+    <p>Am 29. Juni geht es zur 
+        <a href="https://www.leuchtenburg.de" target="_blank">Leuchtenburg</a> - mit Steg der Wünsche und schöner Aussicht. In die Nacht, in ein neues Jahr, in alles, was vor uns liegt. Gemeinsam.</p>
+        <a href="files/Tickets.pdf" target="_blank" download>🎟️ Ticket öffnen</a>
+    </section>
+
+  <section class="gift">
+    <h2>...und hier geht es direkt weiter! 💕</h2>
+    <h2>🎁 Ein Date wie beim ersten Mal</h2>
+    <p>Am 4. Juli erwartet dich ein Picknick an der Saale – genau wie beim allerersten Mal. Ich bringe die Decke, das Essen und hoffentlich kommt auch der Biber. 💞</p>
+    <img src="https://usagif.com/wp-content/uploads/gif/beaver-29.gif.webp" alt="Süßer Biber" style="max-width: 300px; margin-top: 1rem; border-radius: 12px;" />
+  </section>
+
+
+  <section class="gallery">
+    <h2>Unsere schönsten Momente 💕</h2>
+    <div class="slideshow-container" id="slideshow">
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="countdown">
+    <h2>⏳ Noch so lange bis wir uns wiedersehen 💕</h2>
+    <p>Ich zähle die Tage, bis wir wieder zusammen sind. <br />
+        Du fehlst – aber bald sammeln wir neue Erinnerungen.</p>
+        <div id="countdown-timer"></div>
+  </section>
+
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    window.onload = () => {
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    };
+  </script>
+
+<script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const countdownElement = document.getElementById("countdown-timer");
+      const targetDate = new Date("2025-06-25T16:00:00"); // hier ggf. dein Datum anpassen
+
+      function updateCountdown() {
+        const now = new Date();
+        const distance = targetDate - now;
+
+        if (distance <= 0) {
+          countdownElement.innerHTML = "Endlich wieder vereint! 💞";
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+
+        countdownElement.innerHTML = `Noch <strong>${days}</strong> Tage und <strong>${hours}</strong> Stunden`;
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 60000); // alle 60 Sekunden aktualisieren
+    });
+  </script>
+</body>
+
+</body>
+</html>

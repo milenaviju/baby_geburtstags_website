@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff6f9;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero {
+    background-color: #ffdde1;
+    padding: 3rem 1rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #c2185b;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+    color: #ad1457;
+  }
+  
+  .gift, .message {
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+    background: #fff0f5;
+    border-radius: 12px;
+  }
+  .countdown {
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+    background: #ffeef5;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .countdown h2 {
+    font-size: 1.8rem;
+    color: #d81b60;
+  }
+  
+  .countdown p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  #countdown-timer {
+    font-family: 'Courier New', monospace;
+    font-size: 2rem;
+    background: #ffe0f0;
+    color: #cc0055;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .mySlides {
+    display: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    margin: auto;
+    max-height: 400px;
+  }
+  
+  .gallery h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 40px;
+    color: #f06c9b;
+  }
+  .slideshow-container {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    color: #fff;
+    background-color: rgba(194, 24, 91, 0.7);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    user-select: none;
+    transition: background-color 0.3s;
+    z-index: 10;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #c2185b;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+
+  .map-button {
+    display: inline-block;
+    background-color: #f48fb1;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .map-button:hover {
+    background-color: #ec407a;
+  }
