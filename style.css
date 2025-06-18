@@ -136,3 +136,27 @@ body {
   .map-button:hover {
     background-color: #ec407a;
   }
+
+.plan {
+  background-color: #fff3f7;
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.plan h2 {
+  color: #d63384;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
